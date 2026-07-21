@@ -1,0 +1,7 @@
+[build]
+  # TanStack Start + Nitro (netlify preset). Nitro emits the SSR server to the
+  # reserved .netlify/functions-internal directory (auto-detected by Netlify) and
+  # static assets to dist/. The server function handles all routes, including the
+  # /api/public/quote-request server route.
+  command = "npm run build"
+  publish = "dist"
