@@ -12,4 +12,9 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  // Build the SSR server as a Netlify Function instead of the Cloudflare default.
+  // Hard-pinned (rather than relying on Netlify's zero-config auto-detect) so local
+  // builds and CI target the same platform. Nitro's `netlify` preset emits the server
+  // to `.netlify/functions-internal/` and static assets to `dist/`.
+  nitro: { preset: "netlify" },
 });
