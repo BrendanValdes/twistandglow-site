@@ -4,44 +4,44 @@ import { Phone, Brush, Zap, Ticket, Briefcase, Megaphone, Sparkles, PenTool, Sta
 import { ServicePills, type ServiceName } from "@/components/ServicePillsStep";
 
 import { useReveal } from "@/hooks/use-reveal";
-import heroPoster from "@/assets/hero-poster.jpg.asset.json";
-import corporate from "@/assets/corporate.jpg.asset.json";
-import family from "@/assets/family.jpg.asset.json";
-import bigevents from "@/assets/bigevents.jpg.asset.json";
-import uv1 from "@/assets/uv1.jpg.asset.json";
-import uv2 from "@/assets/uv2.jpg.asset.json";
-import posterFestival from "@/assets/poster-festival.jpg.asset.json";
-import img7593b from "@/assets/img7593b.jpg.asset.json";
-import img7588b from "@/assets/img7588b.jpg.asset.json";
-import specialty from "@/assets/specialty.jpg.asset.json";
-import character from "@/assets/character.jpg.asset.json";
-import img7531 from "@/assets/img7531.jpg.asset.json";
-import img7534 from "@/assets/img7534.jpg.asset.json";
-import img7535 from "@/assets/img7535.jpg.asset.json";
-import img7541 from "@/assets/img7541.jpg.asset.json";
-import img7542 from "@/assets/img7542.jpg.asset.json";
-import img7543 from "@/assets/img7543.jpg.asset.json";
+import heroPoster from "@/assets/hero-poster.jpg";
+import corporate from "@/assets/corporate.jpg";
+import family from "@/assets/family.jpg";
+import bigevents from "@/assets/bigevents.jpg";
+import uv1 from "@/assets/uv1.jpg";
+import uv2 from "@/assets/uv2.jpg";
+import posterFestival from "@/assets/poster-festival.jpg";
+import img7593b from "@/assets/img7593b.jpg";
+import img7588b from "@/assets/img7588b.jpg";
+import specialty from "@/assets/specialty.jpg";
+import character from "@/assets/character.jpg";
+import img7531 from "@/assets/img7531.jpg";
+import img7534 from "@/assets/img7534.jpg";
+import img7535 from "@/assets/img7535.jpg";
+import img7541 from "@/assets/img7541.jpg";
+import img7542 from "@/assets/img7542.jpg";
+import img7543 from "@/assets/img7543.jpg";
 
-import img7553 from "@/assets/img7553.jpg.asset.json";
-import img7560 from "@/assets/img7560.jpg.asset.json";
-import img7563 from "@/assets/img7563.jpg.asset.json";
-import img7582 from "@/assets/img7582.jpg.asset.json";
-import img7584 from "@/assets/img7584.jpg.asset.json";
-import img7585 from "@/assets/img7585.jpg.asset.json";
-import img7586 from "@/assets/img7586.jpg.asset.json";
-import img7588 from "@/assets/img7588.jpg.asset.json";
-import img7589 from "@/assets/img7589.jpg.asset.json";
-import img7590 from "@/assets/img7590.jpg.asset.json";
-import img7591 from "@/assets/img7591.jpg.asset.json";
-import img7592 from "@/assets/img7592.jpg.asset.json";
-import img7593 from "@/assets/img7593.jpg.asset.json";
-import img7594 from "@/assets/img7594.jpg.asset.json";
+import img7553 from "@/assets/img7553.jpg";
+import img7560 from "@/assets/img7560.jpg";
+import img7563 from "@/assets/img7563.jpg";
+import img7582 from "@/assets/img7582.jpg";
+import img7584 from "@/assets/img7584.jpg";
+import img7585 from "@/assets/img7585.jpg";
+import img7586 from "@/assets/img7586.jpg";
+import img7588 from "@/assets/img7588.jpg";
+import img7589 from "@/assets/img7589.jpg";
+import img7590 from "@/assets/img7590.jpg";
+import img7591 from "@/assets/img7591.jpg";
+import img7592 from "@/assets/img7592.jpg";
+import img7593 from "@/assets/img7593.jpg";
+import img7594 from "@/assets/img7594.jpg";
 
 const heroSlides = [
-  { src: img7593b.url, pos: "top" },
-  { src: img7588b.url, pos: "center" },
-  { src: img7542.url, pos: "center" },
-  { src: img7543.url, pos: "center" },
+  { src: img7593b, pos: "top" },
+  { src: img7588b, pos: "center" },
+  { src: img7542, pos: "center" },
+  { src: img7543, pos: "center" },
 ];
 const SLIDE_MS = 5000;
 
@@ -52,22 +52,22 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "Face painting, UV glow art, and interactive entertainment for corporate activations, festivals, and parties across Las Vegas." },
       { property: "og:title", content: "Twist and Glow | Las Vegas Face Painting and Event Entertainment" },
       { property: "og:description", content: "Bringing color to every celebration. Trusted by brands, festivals, and families across Las Vegas." },
-      { property: "og:image", content: heroPoster.url },
-      { property: "twitter:image", content: heroPoster.url },
+      { property: "og:image", content: heroPoster },
+      { property: "twitter:image", content: heroPoster },
     ],
   }),
   component: Index,
 });
 
 const bands = [
-  { n: "01", t: "Face Painting", d: "Smiles from the first brushstroke to the last face in line.", img: img7535.url, side: "left" as const, pos: "center center", Icon: Brush },
-  { n: "02", t: "UV Glow Face Painting", d: "Neon reactive art built for blacklight rooms, night events, and anything that needs to stop a crowd.", img: img7531.url, side: "right" as const, pos: "center center", Icon: Zap },
-  { n: "03", t: "Festival and Event Face Painting", d: "High-volume fast lines for outdoor events, fairs, and multi-day festivals.", img: img7534.url, side: "left" as const, pos: "center center", Icon: Ticket },
-  { n: "04", t: "Corporate Activations", d: "Branded face art and interactive experiences that make your guests the content.", img: img7553.url, side: "right" as const, pos: "50% 70%", Icon: Briefcase },
-  { n: "05", t: "Brand Activations", d: "Custom designs around your campaign, product launch, or event theme.", img: img7582.url, side: "left" as const, pos: "center center", Icon: Megaphone },
-  { n: "06", t: "Glitter Bar", d: "Self-serve or artist-led glitter stations that guests line up for.", img: img7560.url, side: "right" as const, pos: "center center", Icon: Sparkles },
-  { n: "07", t: "Temporary Body Art", d: "Detailed body painting for editorial looks, events, and festivals.", img: img7563.url, side: "left" as const, pos: "center center", Icon: PenTool },
-  { n: "08", t: "Entertainment and Specialty Acts", d: "Performers, character entertainers, stilt walkers, and specialty acts through our sister company The Lemon Twist Show.", img: img7543.url, side: "right" as const, pos: "center top", Icon: Star },
+  { n: "01", t: "Face Painting", d: "Smiles from the first brushstroke to the last face in line.", img: img7535, side: "left" as const, pos: "center center", Icon: Brush },
+  { n: "02", t: "UV Glow Face Painting", d: "Neon reactive art built for blacklight rooms, night events, and anything that needs to stop a crowd.", img: img7531, side: "right" as const, pos: "center center", Icon: Zap },
+  { n: "03", t: "Festival and Event Face Painting", d: "High-volume fast lines for outdoor events, fairs, and multi-day festivals.", img: img7534, side: "left" as const, pos: "center center", Icon: Ticket },
+  { n: "04", t: "Corporate Activations", d: "Branded face art and interactive experiences that make your guests the content.", img: img7553, side: "right" as const, pos: "50% 70%", Icon: Briefcase },
+  { n: "05", t: "Brand Activations", d: "Custom designs around your campaign, product launch, or event theme.", img: img7582, side: "left" as const, pos: "center center", Icon: Megaphone },
+  { n: "06", t: "Glitter Bar", d: "Self-serve or artist-led glitter stations that guests line up for.", img: img7560, side: "right" as const, pos: "center center", Icon: Sparkles },
+  { n: "07", t: "Temporary Body Art", d: "Detailed body painting for editorial looks, events, and festivals.", img: img7563, side: "left" as const, pos: "center center", Icon: PenTool },
+  { n: "08", t: "Entertainment and Specialty Acts", d: "Performers, character entertainers, stilt walkers, and specialty acts through our sister company The Lemon Twist Show.", img: img7543, side: "right" as const, pos: "center top", Icon: Star },
 
 ];
 
@@ -381,7 +381,7 @@ function Index() {
 
             ].map((c) => (
               <div key={c.h} className="reveal two-paths-card relative rounded-2xl overflow-hidden group" style={{ height: 520 }}>
-                <img src={c.img.url} alt={c.h} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <img src={c.img} alt={c.h} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
 
                 <div className="absolute inset-0" style={{ background: "linear-gradient(180deg, rgba(13,13,15,0.2) 0%, rgba(13,13,15,0.55) 55%, rgba(13,13,15,0.95) 100%)" }} />
                 <div className="absolute inset-0 p-7 md:p-9 flex flex-col justify-end">
@@ -651,7 +651,7 @@ function Index() {
           <div className="mt-12 grid grid-cols-2 gap-6">
             {[uv1, uv2].map((img, i) => (
               <div key={i} className="reveal img-glow uv-tile rounded-2xl overflow-hidden" style={{ height: 400 }}>
-                <img src={img.url} alt="UV glow body art" className="w-full h-full object-cover" />
+                <img src={img} alt="UV glow body art" className="w-full h-full object-cover" />
               </div>
 
             ))}
@@ -669,7 +669,7 @@ function Index() {
       <section className="section">
         <div className="container-x grid grid-cols-2 gap-12 items-center bigevents-top-grid">
           <div className="reveal rounded-2xl overflow-hidden img-glow" style={{ boxShadow: "0 0 30px -10px rgba(255,45,139,0.4)" }}>
-            <img src={bigevents.url} alt="Large scale event production" className="bigevents-img w-full h-[520px] object-cover" />
+            <img src={bigevents} alt="Large scale event production" className="bigevents-img w-full h-[520px] object-cover" />
           </div>
 
           <div>
@@ -692,7 +692,7 @@ function Index() {
         <div className="container-x mt-16 grid grid-cols-2 gap-5 bigevents-photo-grid">
           {[specialty, character].map((img, i) => (
             <div key={i} className="reveal rounded-2xl overflow-hidden" style={{ border: "1px solid rgba(255,45,139,0.4)", boxShadow: "0 0 24px -10px rgba(255,45,139,0.5)" }}>
-              <img src={img.url} alt="Entertainment" className="bigevents-photo w-full h-[260px] object-cover" style={{ objectPosition: i === 1 ? "center 15%" : "center center" }} />
+              <img src={img} alt="Entertainment" className="bigevents-photo w-full h-[260px] object-cover" style={{ objectPosition: i === 1 ? "center 15%" : "center center" }} />
             </div>
           ))}
         </div>

@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Instagram } from "lucide-react";
-import logo from "@/assets/logo.jpg.asset.json";
+import logo from "@/assets/logo.jpg";
 
 const services = [
   "Face Painting",
@@ -28,7 +28,7 @@ export function Footer() {
       <div className="container-x py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div>
-            <img src={logo.url} alt="Twist and Glow" className="h-[60px] w-[60px] rounded-full object-cover" style={{ boxShadow: "0 0 22px rgba(255,45,139,0.3)" }} />
+            <img src={logo} alt="Twist and Glow" className="h-[60px] w-[60px] rounded-full object-cover" style={{ boxShadow: "0 0 22px rgba(255,45,139,0.3)" }} />
             <p className="mt-4 text-sm text-white/55 max-w-[220px] leading-relaxed">
               Bringing color to every celebration across Las Vegas.
             </p>

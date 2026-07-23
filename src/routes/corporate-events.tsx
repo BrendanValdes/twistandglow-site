@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Briefcase, Sparkles, Ticket, Users } from "lucide-react";
 import { useReveal } from "@/hooks/use-reveal";
-import heroImg from "@/assets/img7553.jpg.asset.json";
+import heroImg from "@/assets/img7553.jpg";
 
 export const Route = createFileRoute("/corporate-events")({
   head: () => ({
@@ -10,8 +10,8 @@ export const Route = createFileRoute("/corporate-events")({
       { name: "description", content: "Brand activations, experiential marketing, festivals, and conventions in Las Vegas. High-volume artist teams built for big crowds." },
       { property: "og:title", content: "Corporate Events | Twist and Glow Las Vegas" },
       { property: "og:description", content: "Brand activations, experiential marketing, festivals, and conventions in Las Vegas." },
-      { property: "og:image", content: heroImg.url },
-      { property: "twitter:image", content: heroImg.url },
+      { property: "og:image", content: heroImg },
+      { property: "twitter:image", content: heroImg },
     ],
   }),
   component: CorporatePage,
@@ -25,7 +25,7 @@ function CorporatePage() {
       {/* HERO */}
       <section className="relative overflow-hidden flex items-center" style={{ minHeight: "70vh" }}>
         <img
-          src={heroImg.url}
+          src={heroImg}
           alt="Brand activation on the Las Vegas Strip"
           className="absolute inset-0 w-full h-full object-cover"
           style={{ objectPosition: "50% 70%" }}
