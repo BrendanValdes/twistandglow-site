@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { X, Phone } from "lucide-react";
-import logo from "@/assets/logo.jpg.asset.json";
+import logo from "@/assets/logo.jpg";
 
 export function Nav() {
   const [open, setOpen] = useState(false);
@@ -58,7 +58,7 @@ export function Nav() {
 
         <div className="mobile-menu-brand">
           <img
-            src={logo.url}
+            src={logo}
             alt="Twist and Glow"
             className="rounded-full object-cover"
             style={{ width: 72, height: 72, boxShadow: "0 0 22px rgba(255,45,139,0.45)" }}
@@ -119,7 +119,7 @@ export function Nav() {
     >
       <div className="container-x flex items-center justify-between py-3">
         <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <img src={logo.url} alt="Twist and Glow" className="h-12 w-12 rounded-full object-cover" style={{ boxShadow: "0 0 18px rgba(255,45,139,0.35)" }} />
+          <img src={logo} alt="Twist and Glow" className="h-12 w-12 rounded-full object-cover" style={{ boxShadow: "0 0 18px rgba(255,45,139,0.35)" }} />
           <span className="block font-display text-base sm:text-lg tracking-wide whitespace-nowrap">Twist <span className="text-[var(--pink)]">&</span> Glow</span>
         </Link>
 

@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Droplets, Brush, Zap } from "lucide-react";
 import { useReveal } from "@/hooks/use-reveal";
-import heroImg from "@/assets/img7535.jpg.asset.json";
+import heroImg from "@/assets/img7535.jpg";
 
 export const Route = createFileRoute("/face-painting")({
   head: () => ({
@@ -10,8 +10,8 @@ export const Route = createFileRoute("/face-painting")({
       { name: "description", content: "Premium face painting in Las Vegas for parties, festivals, and events. Skin-safe pigments, UV glow designs, and waterproof art for pool parties." },
       { property: "og:title", content: "Face Painting | Twist and Glow Las Vegas" },
       { property: "og:description", content: "Premium face painting in Las Vegas for parties, festivals, and events. Skin-safe pigments, UV glow designs, and waterproof art." },
-      { property: "og:image", content: heroImg.url },
-      { property: "twitter:image", content: heroImg.url },
+      { property: "og:image", content: heroImg },
+      { property: "twitter:image", content: heroImg },
     ],
   }),
   component: FacePaintingPage,
@@ -25,7 +25,7 @@ function FacePaintingPage() {
       {/* HERO */}
       <section className="relative overflow-hidden flex items-center" style={{ minHeight: "70vh" }}>
         <img
-          src={heroImg.url}
+          src={heroImg}
           alt="Face painting in Las Vegas"
           className="absolute inset-0 w-full h-full object-cover"
           style={{ objectPosition: "center center" }}
